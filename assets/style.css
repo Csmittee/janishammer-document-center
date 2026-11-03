@@ -1,0 +1,51 @@
+/* Document Center theme. Values read from i-flexthailand.com js/iflex-config.js (2026-11-03):
+   primary #1A1A1A (black), secondary #FFD700 (gold), accent #FFFFFF, #fafafa off-white, #444 body-text grey; font Montserrat. */
+:root {
+  --primary: #1A1A1A;
+  --secondary: #FFD700;
+  --accent: #FFFFFF;
+  --offwhite: #fafafa;
+  --muted: #444;
+  --font: 'Montserrat', 'Noto Sans Thai', 'Sarabun', 'Leelawadee UI', Tahoma, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.65; color: var(--primary); background: var(--offwhite); }
+a { color: var(--primary); }
+.band { background: var(--primary); padding: 20px 16px 24px; }
+.card { max-width: 760px; margin: 0 auto; background: var(--primary); color: var(--secondary); border: 2px solid var(--secondary); border-radius: 12px; padding: 16px 18px; }
+.card h1 { margin: 0; font-size: 1.45rem; line-height: 1.3; color: var(--secondary); }
+.card .sub { margin: 6px 0 0; color: var(--accent); font-size: 1rem; }
+.card .issuer { margin: 10px 0 0; color: var(--accent); font-size: 1rem; }
+.card .ver { margin: 4px 0 0; color: var(--accent); font-size: 0.95rem; }
+main { max-width: 760px; margin: 0 auto; padding: 16px; }
+.banner { background: var(--secondary); color: var(--primary); border-left: 8px solid var(--primary); border-radius: 6px; padding: 12px 14px; margin: 0 0 18px; font-size: 1rem; font-weight: 600; }
+.banner p { margin: 0 0 8px; }
+.banner p:last-child { margin: 0; }
+.biz { font-size: 1.25rem; margin: 22px 0 10px; }
+.doc { background: var(--accent); border: 1px solid var(--primary); border-radius: 10px; padding: 14px 16px; margin: 0 0 14px; }
+.doc h3 { margin: 0; font-size: 1.1rem; line-height: 1.35; }
+.doc .th { margin: 2px 0 12px; color: var(--muted); }
+.btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 18px; border-radius: 8px; font-weight: 700; text-decoration: none; border: 2px solid var(--primary); font-size: 1rem; }
+.btn.read { background: var(--primary); color: var(--secondary); }
+.btn.pdf { background: var(--secondary); color: var(--primary); }
+.back { display: inline-flex; align-items: center; min-height: 48px; font-weight: 600; }
+footer { max-width: 760px; margin: 0 auto; padding: 8px 16px 32px; color: var(--muted); font-size: 0.95rem; text-align: center; }
+.noscript { background: var(--accent); border: 1px solid var(--primary); padding: 12px 14px; border-radius: 6px; }
+/* read pages */
+.langbar { position: sticky; top: 0; z-index: 5; background: var(--primary); padding: 8px 16px; display: none; }
+.js .langbar { display: block; }
+.langbar .inner { max-width: 760px; margin: 0 auto; display: flex; gap: 8px; }
+.langbar button { flex: 1; min-height: 48px; font: inherit; font-weight: 700; border-radius: 8px; border: 2px solid var(--secondary); background: var(--primary); color: var(--secondary); cursor: pointer; }
+.langbar button[aria-pressed="true"] { background: var(--secondary); color: var(--primary); }
+.js .lang[hidden] { display: none; }
+.lang h2 { font-size: 1.3rem; margin: 8px 0 12px; border-bottom: 3px solid var(--secondary); padding-bottom: 4px; }
+.lang h3 { font-size: 1.1rem; margin: 22px 0 6px; }
+.lang ul { padding-left: 22px; margin: 6px 0 12px; }
+.lang li { margin: 0 0 8px; }
+.lang li.check { list-style: none; margin-left: -22px; padding-left: 36px; position: relative; }
+.lang li.check::before { content: ""; position: absolute; left: 4px; top: 0.35em; width: 18px; height: 18px; border: 2px solid var(--primary); border-radius: 3px; background: var(--accent); }
+.lang blockquote { margin: 12px 0; padding: 8px 14px; border-left: 6px solid var(--secondary); background: var(--accent); }
+.lang hr { border: 0; border-top: 2px solid var(--secondary); margin: 18px 0; }
+.dl { margin: 22px 0 8px; }
