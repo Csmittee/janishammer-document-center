@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "site": "Janishammer Document Center",
+  "entity": {
+    "name": "Janishammer",
+    "en": "Issued by Janishammer, operating I-Flex Pilates",
+    "th": "ออกโดย Janishammer ผู้ดำเนินการ I-Flex Pilates"
+  },
+  "banner": {
+    "en": "DRAFT – not yet checked by a lawyer. This is an agreement between the studio and the renter about what we do in certain situations. It is not law enforcement.",
+    "th": "ฉบับร่าง – ยังไม่ผ่านการตรวจโดยนักกฎหมาย เอกสารนี้เป็นข้อตกลงระหว่างสตูดิโอกับผู้เช่าว่าเราจะทำอย่างไรในสถานการณ์ต่าง ๆ ไม่ใช่การบังคับใช้กฎหมาย"
+  },
+  "businesses": [
+    {
+      "id": "i-flexthailand",
+      "name": "I-Flex Pilates"
+    }
+  ],
+  "documents": [
+    {
+      "id": "studio-rules",
+      "business": "i-flexthailand",
+      "group": "rental",
+      "title_en": "Studio Rules",
+      "title_th": "กฎของสตูดิโอ",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "page": "/studio-rules",
+      "pdf": "/pdf/studio-rules.pdf",
+      "version": "1.0-draft",
+      "updated": "2026-11-03",
+      "on": true
+    },
+    {
+      "id": "safety-consent",
+      "business": "i-flexthailand",
+      "group": "rental",
+      "title_en": "Safety Consent",
+      "title_th": "หนังสือยินยอมด้านความปลอดภัย",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "page": "/safety-consent",
+      "pdf": "/pdf/safety-consent.pdf",
+      "version": "1.0-draft",
+      "updated": "2026-11-03",
+      "on": true
+    },
+    {
+      "id": "equipment-care-damage",
+      "business": "i-flexthailand",
+      "group": "rental",
+      "title_en": "Equipment Care and Damage",
+      "title_th": "การดูแลอุปกรณ์และความเสียหาย",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "page": "/equipment-care-damage",
+      "pdf": "/pdf/equipment-care-damage.pdf",
+      "version": "1.0-draft",
+      "updated": "2026-11-03",
+      "on": true
+    },
+    {
+      "id": "privacy-notice",
+      "business": "i-flexthailand",
+      "group": "rental",
+      "title_en": "Privacy Notice",
+      "title_th": "ประกาศความเป็นส่วนตัว",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "page": "/privacy-notice",
+      "pdf": "/pdf/privacy-notice.pdf",
+      "version": "1.0-draft",
+      "updated": "2026-11-03",
+      "on": true
+    },
+    {
+      "id": "trainer-pool-agreement",
+      "business": "i-flexthailand",
+      "group": "trainer-pool",
+      "title_en": "Trainer Pool Basic Agreement",
+      "title_th": "ข้อตกลงพื้นฐาน — กลุ่มครูฟรีแลนซ์ I-Flex",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "page": "/trainer-pool-agreement",
+      "pdf": "/pdf/trainer-pool-agreement.pdf",
+      "version": "1.0-draft",
+      "updated": "2026-11-03",
+      "on": true
+    }
+  ]
+}

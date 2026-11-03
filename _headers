@@ -1,0 +1,7 @@
+/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/documents.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
