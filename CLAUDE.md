@@ -1,9 +1,9 @@
 # CLAUDE.md — janishammer-document-center
-> Version 1.0 — 2026-11-03
-> Changes: seed (CC_SESSION_docs_center_v1)
-> Previous: NONE
+> Version 1.1 — 2026-11-03
+> Changes: hosting line — Cloudflare Workers static assets (wrangler.jsonc), not a Pages project; wrangler.jsonc + .assetsignore listed
+> Previous: Version 1.0 — 2026-11-03 (seed, CC_SESSION_docs_center_v1)
 
-Project: Janishammer Document Center — https://docs.janishammer.com (Cloudflare Pages, auto-deploy from main, no build command).
+Project: Janishammer Document Center — https://docs.janishammer.com (Cloudflare Workers static assets, auto-deploy from main, no build command; config: wrangler.jsonc, .assetsignore).
 Purpose: hidden reference site for business documents (rental rules, consent, privacy, agreements). Rules live in janishammer-central (START_HERE.md, RULES.md; house rule WF-12 in RULES-workflow.md).
 
 House rules (only two here):
@@ -20,4 +20,4 @@ Constraints:
   - `"on": false` in documents.json hides a document from the list but does NOT make it private: anyone with the exact file address can open it. documents.json is public. Nothing private goes in.
   - The DRAFT banner (documents.json `banner`) stays until the owner lifts it after the legal check.
   - No secrets. No image files committed (Cloudinary only, CONT-4). No bank details, no LINE links.
-  - 404.html must exist (otherwise Pages answers unknown addresses with the list page).
+  - 404.html must exist; wrangler.jsonc has not_found_handling "404-page" so unknown addresses show it. Do not rename wrangler.jsonc or the project (WORKER CHANGE NOT REQUIRED, DEP-7).
