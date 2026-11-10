@@ -14,6 +14,10 @@
     {
       "id": "i-flexthailand",
       "name": "I-Flex Pilates"
+    },
+    {
+      "id": "saycheer",
+      "name": "SayCheer by Janishammer"
     }
   ],
   "documents": [
@@ -95,6 +99,22 @@
       "pdf": "/pdf/trainer-pool-agreement.pdf",
       "version": "1.0-draft",
       "updated": "2026-11-03",
+      "on": true
+    },
+    {
+      "id": "cookie-notice",
+      "business": "saycheer",
+      "group": "website",
+      "title_en": "Cookie Notice",
+      "title_th": "ประกาศเกี่ยวกับคุกกี้",
+      "languages": [
+        "en",
+        "th"
+      ],
+      "page": "/cookie-notice",
+      "pdf": "/pdf/cookie-notice.pdf",
+      "version": "1.0-draft",
+      "updated": "2026-11-10",
       "on": true
     }
   ]

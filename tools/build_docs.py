@@ -20,6 +20,8 @@ SEO = {
   'Equipment Care and Damage for renting the I-Flex Pilates studio: care before and after each session, damage charges, refundable deposit. English and Thai.'),
  'privacy-notice': ('Privacy Notice — I-Flex Pilates | Janishammer Documents',
   'Privacy Notice of Janishammer, operating I-Flex Pilates: what we collect, why, who sees it, how long we keep it and your rights. English and Thai, with PDF.'),
+ 'cookie-notice': ('Cookie Notice — SayCheer Website | Janishammer Documents',
+  'Cookie Notice for saycheer.janishammer.com: the Google Analytics cookies set only if you accept, what they do, your choice and your rights. English and Thai.'),
  'trainer-pool-agreement': ('Trainer Pool Basic Agreement — I-Flex | Janishammer Docs',
   'Basic agreement for the I-Flex freelance trainer list and the free-class pool: verification, commitment, cancellation and no-show policy. English and Thai.'),
 }
