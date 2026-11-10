@@ -135,6 +135,7 @@ LANG_JS = '''<script>
 </script>'''
 
 def read_page(doc, fm, en, th):
+    # Changed: the back link goes to the document's own business view, never the full list 2026-11-10
     title, desc = SEO[doc['id']]
     iss_en, iss_th = issuer_lines(doc)
     return head(title, desc, f'{BASE}{doc["page"]}', theme_of(doc), doc['business']) + f'''
@@ -151,7 +152,7 @@ def read_page(doc, fm, en, th):
 </div></header>
 <main>
 {banner_html(doc)}
-<a class="back" href="/">← All documents / <span lang="th">กลับไปรายการเอกสาร</span></a>
+<a class="back" href="/?b={doc['business']}">← All documents / <span lang="th">กลับไปรายการเอกสาร</span></a>
 <section class="lang" id="en" lang="en">
 <h2>English</h2>
 {md2html(en)}
@@ -161,7 +162,7 @@ def read_page(doc, fm, en, th):
 {md2html(th)}
 </section>
 <p class="dl"><a class="btn pdf" href="{doc['pdf']}" download>Download PDF / ดาวน์โหลด PDF</a></p>
-<a class="back" href="/">← All documents / <span lang="th">กลับไปรายการเอกสาร</span></a>
+<a class="back" href="/?b={doc['business']}">← All documents / <span lang="th">กลับไปรายการเอกสาร</span></a>
 </main>
 <footer>Reference documents only · <span lang="th">เอกสารอ้างอิงเท่านั้น</span></footer>
 {LANG_JS}
