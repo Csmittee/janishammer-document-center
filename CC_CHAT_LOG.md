@@ -1,8 +1,16 @@
 # CC_CHAT_LOG.md — janishammer-document-center
-> Version 1.4 — 2026-11-10
-> Changes: CC_SESSION_docs_themes_v1 entry added
-> Previous: Version 1.3 — 2026-11-10 (addendum Task 1b recorded in the cookie-notice entry (issuer override)). Earlier: Version 1.2 — 2026-11-10 (cookie-notice entry added (Document Center part)). Earlier: Version 1.1 — 2026-11-03 (deploy-fix entry added). Earlier: Version 1.0 — 2026-11-03 (first entry)
+> Version 1.5 — 2026-11-10
+> Changes: per-business view entry added
+> Previous: Version 1.4 — 2026-11-10 (CC_SESSION_docs_themes_v1 entry added). Earlier: Version 1.3 — 2026-11-10 (addendum Task 1b recorded in the cookie-notice entry (issuer override)). Earlier: Version 1.2 — 2026-11-10 (cookie-notice entry added (Document Center part)). Earlier: Version 1.1 — 2026-11-03 (deploy-fix entry added). Earlier: Version 1.0 — 2026-11-03 (first entry)
 
+---
+## 2026-11-10 — Per-business view (owner request in session chat, follow-up to CC_SESSION_docs_themes_v1)
+**Did:** assets/list.js (`/?b=<business id>` shows only that business, with its own banner and issuer; unknown id shows a short message; `/` unchanged), tools/build_docs.py (the two "← All documents" links go to the document's own business view), the six read pages rebuilt with `--no-pdf` (diff = exactly 12 link lines, 2 per page; no PDF, src or document text changed), CLAUDE.md (new constraint), PROJECT_STATE, this log. 7 changed files in addition to the state files.
+**Why:** owner asked 2026-11-10: the LINE menu opens the root list, which also shows the SayCheer cookie notice; each site or service must see only its own documents. Hiding is not protection (`"on": false` and exact addresses stay public); this is about what each audience is shown.
+**Updated:** NONE here (rule text is in janishammer-central, WF-12 clause 7). **New files:** none.
+**Pending Chat verify:** owner QA steps 1–4 on the PR. NOT VERIFIED LIVE.
+**Flags:** requesters (LINE menu, others) must switch their link to `/?b=<business id>` once; `/` keeps working until then. A stale cached list.js would still show the full list (hard refresh). 404.html still links to `/` (unknown address, business unknown).
+**Previous PR QA:** janishammer-document-center#4 PENDING (owner QA steps 1–5). **Owner QA:** this PR PENDING (steps 1–4)
 ---
 ## 2026-11-10 — CC_SESSION_docs_themes_v1
 **Did:** per-business issuer, banner and theme. documents.json (global entity and banner now generic; businesses `i-flexthailand` (previous global texts verbatim) and `saycheer` (issuer, banner, theme); cookie-notice loses its own issuer, version 1.1-draft; `_note` names central docs/WEB_DESIGN_PATTERNS.md as the colour home), tools/build_docs.py (resolve issuer / banner / theme per document: document, business, global; writes assets/theme-<id>.css; themed pages add the theme's font link and theme file; PDF colours from the theme; `--only <id>`), NEW assets/theme-saycheer.css (generated), src/cookie-notice.md (v1.1-draft; the three brackets replaced with the order's exact wording; the sentence "Items in square brackets are blank on purpose" removed in both languages because no bracket is left), cookie-notice.html and pdf/cookie-notice.pdf (rebuilt with `--only cookie-notice`), NEW archive/cookie-notice/v1.0-draft-2026-11-10/ (src + pdf), PROJECT_STATE, this log. assets/style.css, index.html, 404.html, _headers, wrangler.jsonc, CLAUDE.md untouched.
