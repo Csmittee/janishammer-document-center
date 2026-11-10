@@ -1,23 +1,48 @@
 {
   "schema": 1,
   "site": "Janishammer Document Center",
+  "_note": "Colours for a business theme come from janishammer-central docs/WEB_DESIGN_PATTERNS.md (SayCheer tokens, section 7). Resolution order for issuer, banner and theme: the document, then its business, then the global value. A business without a theme uses the default black and gold of assets/style.css.",
   "entity": {
     "name": "Janishammer",
-    "en": "Issued by Janishammer, operating I-Flex Pilates",
-    "th": "ออกโดย Janishammer ผู้ดำเนินการ I-Flex Pilates"
+    "en": "Issued by Janishammer",
+    "th": "ออกโดย Janishammer"
   },
   "banner": {
-    "en": "DRAFT – not yet checked by a lawyer. This is an agreement between the studio and the renter about what we do in certain situations. It is not law enforcement.",
-    "th": "ฉบับร่าง – ยังไม่ผ่านการตรวจโดยนักกฎหมาย เอกสารนี้เป็นข้อตกลงระหว่างสตูดิโอกับผู้เช่าว่าเราจะทำอย่างไรในสถานการณ์ต่าง ๆ ไม่ใช่การบังคับใช้กฎหมาย"
+    "en": "DRAFT – not yet checked by a lawyer. The documents listed here are drafts.",
+    "th": "ฉบับร่าง – ยังไม่ผ่านการตรวจโดยนักกฎหมาย เอกสารที่แสดงอยู่ที่นี่เป็นฉบับร่าง"
   },
   "businesses": [
     {
       "id": "i-flexthailand",
-      "name": "I-Flex Pilates"
+      "name": "I-Flex Pilates",
+      "issuer_en": "Issued by Janishammer, operating I-Flex Pilates",
+      "issuer_th": "ออกโดย Janishammer ผู้ดำเนินการ I-Flex Pilates",
+      "banner": {
+        "en": "DRAFT – not yet checked by a lawyer. This is an agreement between the studio and the renter about what we do in certain situations. It is not law enforcement.",
+        "th": "ฉบับร่าง – ยังไม่ผ่านการตรวจโดยนักกฎหมาย เอกสารนี้เป็นข้อตกลงระหว่างสตูดิโอกับผู้เช่าว่าเราจะทำอย่างไรในสถานการณ์ต่าง ๆ ไม่ใช่การบังคับใช้กฎหมาย"
+      }
     },
     {
       "id": "saycheer",
-      "name": "SayCheer by Janishammer"
+      "name": "SayCheer by Janishammer",
+      "issuer_en": "Issued by Janishammer (Janis Hammer Co., Ltd), operating SayCheer",
+      "issuer_th": "ออกโดย Janishammer (บริษัท จานิส แฮมเมอร์ จำกัด) ผู้ดำเนินการ SayCheer",
+      "banner": {
+        "en": "DRAFT – not yet checked by a lawyer. This notice explains how this website uses cookies. It is not legal advice.",
+        "th": "ฉบับร่าง – ยังไม่ผ่านการตรวจโดยนักกฎหมาย ประกาศนี้อธิบายวิธีที่เว็บไซต์นี้ใช้คุกกี้ ไม่ใช่คำแนะนำทางกฎหมาย"
+      },
+      "theme": {
+        "colours": {
+          "primary": "#1F2D3A",
+          "secondary": "#F2A07F",
+          "accent": "#FFFFFF",
+          "offwhite": "#FBF7F2",
+          "muted": "#444444",
+          "highlight": "#5BB8B0"
+        },
+        "font": "'Inter', 'Noto Sans Thai', 'Sarabun', 'Leelawadee UI', Tahoma, sans-serif",
+        "font_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Thai:wght@400;600;700&display=swap"
+      }
     }
   ],
   "documents": [
@@ -113,11 +138,9 @@
       ],
       "page": "/cookie-notice",
       "pdf": "/pdf/cookie-notice.pdf",
-      "version": "1.0-draft",
+      "version": "1.1-draft",
       "updated": "2026-11-10",
-      "on": true,
-      "issuer_en": "Issued by Janishammer (Janis Hammer Co., Ltd), operating SayCheer",
-      "issuer_th": "ออกโดย Janishammer (บริษัท จานิส แฮมเมอร์ จำกัด) ผู้ดำเนินการ SayCheer"
+      "on": true
     }
   ]
 }
