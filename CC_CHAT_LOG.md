@@ -1,8 +1,16 @@
 # CC_CHAT_LOG.md — janishammer-document-center
-> Version 1.1 — 2026-11-03
-> Changes: deploy-fix entry added
-> Previous: Version 1.0 — 2026-11-03 (first entry)
+> Version 1.3 — 2026-11-10
+> Changes: addendum Task 1b recorded in the cookie-notice entry (issuer override)
+> Previous: Version 1.2 — 2026-11-10 (cookie-notice entry added (Document Center part)). Earlier: Version 1.1 — 2026-11-03 (deploy-fix entry added). Earlier: Version 1.0 — 2026-11-03 (first entry)
 
+---
+## 2026-11-10 — CC_SESSION_saycheer_cookie_v1b (Document Center part of CC_SESSION_saycheer_cookie_v1)
+**Did:** 7 files: src/cookie-notice.md (NEW, 57 lines, text copied exactly from Appendix A of the original order), documents.json (business `saycheer` + document `cookie-notice`, page /cookie-notice, pdf /pdf/cookie-notice.pdf, version 1.0-draft, updated 2026-11-10, group website, on true), cookie-notice.html and pdf/cookie-notice.pdf (NEW, built by tools/build_docs.py functions; PDF 3 pages, Thai text intact), tools/build_docs.py (one SEO entry, title 56 and description 157 characters, SEO-4; plus the issuer override from the addendum), CLAUDE.md (link constraint per WF-12), PROJECT_STATE, this log. Measured: raw-source search zero matches; the five documents, five PDFs, index.html and 404.html byte-identical before and after (sha256); noindex, nofollow present; canonical and og:url `https://docs.janishammer.com/cookie-notice` equal the link in saycheer-website consent.js; `_headers`, wrangler.jsonc untouched; index.html not regenerated (assets/list.js builds the list from documents.json and shows the new business heading).
+**Updated:** NONE (no rule). **New files:** src/cookie-notice.md, cookie-notice.html, pdf/cookie-notice.pdf.
+**ADDENDUM Task 1b (fix commit on this PR, owner message 2026-11-10):** documents.json `cookie-notice` gets optional `issuer_en` / `issuer_th`; tools/build_docs.py reads them through a small `issuer_lines(doc)` helper and falls back to the global entity (read page and PDF header); the cookie notice page, descriptions, header and PDF now name SayCheer. Checked: "I-Flex" appears 0 times in cookie-notice.html and 0 times in the PDF text; the five existing documents, five PDFs, index.html and 404.html are byte-identical (sha256) and the five existing read pages re-render identically through the tool; assets/style.css untouched (black and gold theme kept; per-business theme parked).
+**Pending Chat verify:** owner QA steps 1–2 on this PR after the Workers deploy is green.
+**Flags:** CLAUDE.md constraint changed (WF-12 wins over "no link from any other site"). BUILD TOOL LIMITS: the global DRAFT banner text is I-Flex wording ("an agreement between the studio and the renter") and still shows on the cookie notice (the issuer line is fixed by the addendum); the tool rebuilds all documents on each run, so only the new document was built, with the tool's own functions; one SEO line was added to the tool (outside the order's file list, needed or the tool stops with a KeyError for the new id). PDF built on a machine with the Loma font installed; the font was not committed. LESSON (not a rule): an order that spans several repos must be run with all of them attached; this one was split because the Document Center was not. WORKER CHANGE NOT REQUIRED. NOT VERIFIED LIVE — owner QA steps 1–2.
+**Previous PR QA:** janishammer-document-center#1 — owner QA passed per Chat (2026-11-03). **Owner QA:** this PR PENDING (steps 1–2).
 ---
 ## 2026-11-03 — CC_FIX_docs_center_workers_config (follow-up to CC_SESSION_docs_center_v1, on the owner's request)
 **Did:** added wrangler.jsonc (name janishammer-document-center, assets directory ./, not_found_handling 404-page) and .assetsignore (wrangler.jsonc, .assetsignore, .git/, .github/); CLAUDE.md, PROJECT_STATE, this log.

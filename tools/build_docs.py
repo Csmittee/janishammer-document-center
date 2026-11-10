@@ -20,11 +20,18 @@ SEO = {
   'Equipment Care and Damage for renting the I-Flex Pilates studio: care before and after each session, damage charges, refundable deposit. English and Thai.'),
  'privacy-notice': ('Privacy Notice — I-Flex Pilates | Janishammer Documents',
   'Privacy Notice of Janishammer, operating I-Flex Pilates: what we collect, why, who sees it, how long we keep it and your rights. English and Thai, with PDF.'),
+ 'cookie-notice': ('Cookie Notice — SayCheer Website | Janishammer Documents',
+  'Cookie Notice for saycheer.janishammer.com: the Google Analytics cookies set only if you accept, what they do, your choice and your rights. English and Thai.'),
  'trainer-pool-agreement': ('Trainer Pool Basic Agreement — I-Flex | Janishammer Docs',
   'Basic agreement for the I-Flex freelance trainer list and the free-class pool: verification, commitment, cancellation and no-show policy. English and Thai.'),
 }
 
 def esc(s): return html.escape(s, quote=True)
+
+def issuer_lines(doc):
+    # Changed: optional per-document issuer (issuer_en / issuer_th in documents.json); the global entity is the fallback 2026-11-10
+    ent = D['entity']
+    return doc.get('issuer_en', ent['en']), doc.get('issuer_th', ent['th'])
 
 def parse(path):
     t = open(path, encoding='utf-8').read()
@@ -86,7 +93,7 @@ LANG_JS = '''<script>
 
 def read_page(doc, fm, en, th):
     title, desc = SEO[doc['id']]
-    ent = D['entity']
+    iss_en, iss_th = issuer_lines(doc)
     return head(title, desc, f'{BASE}{doc["page"]}') + f'''
 <body>
 <div class="langbar"><div class="inner">
@@ -96,7 +103,7 @@ def read_page(doc, fm, en, th):
 <header class="band"><div class="card">
 <h1>{esc(fm['title_en'])}</h1>
 <p class="sub" lang="th">{esc(fm['title_th'])}</p>
-<p class="issuer">{esc(ent['en'])}<br><span lang="th">{esc(ent['th'])}</span></p>
+<p class="issuer">{esc(iss_en)}<br><span lang="th">{esc(iss_th)}</span></p>
 <p class="ver">{esc(fm['version_line_en'])}<br><span lang="th">{esc(fm['version_line_th'])}</span></p>
 </div></header>
 <main>
@@ -135,11 +142,11 @@ hr { border: 0; border-top: 1.5px solid #FFD700; }
 .pb { break-before: page; }'''
 
 def pdf_html(doc, fm, en, th):
-    ent = D['entity']
+    iss_en, iss_th = issuer_lines(doc)
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>{esc(fm['title_en'])}</title><style>{PDF_CSS}</style></head><body>
 {banner_html()}
 <h1>{esc(fm['title_en'])}</h1><p class="sub" lang="th">{esc(fm['title_th'])}</p>
-<p class="issuer">{esc(ent['en'])}<br><span lang="th">{esc(ent['th'])}</span></p>
+<p class="issuer">{esc(iss_en)}<br><span lang="th">{esc(iss_th)}</span></p>
 <p class="ver">{esc(fm['version_line_en'])}<br><span lang="th">{esc(fm['version_line_th'])}</span></p>
 <section lang="en"><h2>English</h2>{md2html(en)}</section>
 <section lang="th" class="pb"><h2>ภาษาไทย</h2>{md2html(th)}</section>
