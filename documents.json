@@ -115,7 +115,9 @@
       "pdf": "/pdf/cookie-notice.pdf",
       "version": "1.0-draft",
       "updated": "2026-11-10",
-      "on": true
+      "on": true,
+      "issuer_en": "Issued by Janishammer (Janis Hammer Co., Ltd), operating SayCheer",
+      "issuer_th": "ออกโดย Janishammer (บริษัท จานิส แฮมเมอร์ จำกัด) ผู้ดำเนินการ SayCheer"
     }
   ]
 }
