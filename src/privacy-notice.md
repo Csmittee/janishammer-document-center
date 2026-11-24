@@ -2,8 +2,8 @@
 id: privacy-notice
 title_en: I-Flex Pilates — Privacy Notice
 title_th: ประกาศความเป็นส่วนตัว I-Flex Pilates
-version_line_en: Version 1.0 DRAFT — 3 November 2026 · Studio rental and student requests
-version_line_th: ฉบับ 1.0 ร่าง — 3 พฤศจิกายน 2026 · การเช่าสตูดิโอและคำขอจากนักเรียน
+version_line_en: Version 1.1 DRAFT — 25 November 2026 · Studio rental, student requests and website catalog requests
+version_line_th: ฉบับ 1.1 ร่าง — 25 พฤศจิกายน 2026 · การเช่าสตูดิโอ คำขอจากนักเรียน และคำขอแคตตาล็อกจากเว็บไซต์
 ---
 
 ## English
@@ -21,19 +21,21 @@ Janishammer, operating I-Flex Pilates, 165/4 Moo 6, Pattaya City, Bang Lamung Di
 - Booking details: date, time, people, machines, payment received.
 - Your ID is checked by eye at the first visit. We do not copy or photograph it.
 - A copy of a teacher's certificate or proof of training history, and of students' consent forms.
+- Website catalog request: your name, your email, and a phone number or LINE name if you choose to give one.
+- For a website catalog request we use your details only to give you the catalog link, and to contact you about it if you asked us to.
 - We use this to run bookings, approve renters, keep safety and damage records, and answer your requests. We do not sell your data.
 
 ### Who sees it, and where it is kept
-Janishammer (I-Flex Pilates). Form answers are stored in Airtable, a service that may store data outside Thailand.
+Janishammer (I-Flex Pilates). Form answers are stored in Airtable, a service that may store data outside Thailand. Website catalog requests are also stored in Airtable. The website form uses Cloudflare Turnstile to stop automated spam.
 
 ### How long
-[Retention period — to be set by the owner.] Until then: while you rent from us, and afterwards for safety and dispute records. You can ask us to delete your data at any time; we will, unless the law requires us to keep it.
+[Retention period — to be set by the owner.] Until then: while you rent from us, and afterwards for safety and dispute records. You can ask us to delete your data at any time; we will, unless the law requires us to keep it. Website catalog requests (name, email, contact detail) are kept for 1 year after the request, then deleted.
 
 ### Your rights
 Ask to see, correct or delete your data, or withdraw your consent, by writing to info@i-flexthailand.com
 
 ### Consent
-By ticking the PDPA box in the form you agree that Janishammer (I-Flex Pilates) keeps and uses this information for the purposes above. For a child under 13, the guardian gives this consent.
+By ticking the PDPA box in the form you agree that Janishammer (I-Flex Pilates) keeps and uses this information for the purposes above. For a child under 13, the guardian gives this consent. For a website catalog request, you agree by ticking the consent box on the catalog form.
 
 ## ภาษาไทย
 
@@ -50,16 +52,18 @@ Janishammer ผู้ดำเนินการ I-Flex Pilates 165/4 หมู�
 - รายละเอียดการจอง: วันที่ เวลา จำนวนคน เครื่องที่ใช้ การรับชำระเงิน
 - เราตรวจบัตรประจำตัวด้วยสายตาในการมาครั้งแรก ไม่ทำสำเนาและไม่ถ่ายรูป
 - สำเนาใบรับรองของครูหรือหลักฐานประวัติการฝึกสอน และหนังสือยินยอมของนักเรียน
+- คำขอแคตตาล็อกจากเว็บไซต์: ชื่อ อีเมล และเบอร์โทรหรือชื่อ LINE หากคุณเลือกให้
+- สำหรับคำขอแคตตาล็อกจากเว็บไซต์ เราใช้ข้อมูลของคุณเพื่อให้ลิงก์ดาวน์โหลดแคตตาล็อก และติดต่อกลับเรื่องนี้หากคุณขอให้ติดต่อเท่านั้น
 - เราใช้ข้อมูลเพื่อจัดการการจอง อนุมัติผู้เช่า เก็บบันทึกด้านความปลอดภัยและความเสียหาย และตอบคำขอของคุณ เราไม่ขายข้อมูลของคุณ
 
 ### ใครเห็นข้อมูล และเก็บที่ไหน
-Janishammer (I-Flex Pilates) คำตอบจากฟอร์มเก็บไว้ใน Airtable ซึ่งอาจเก็บข้อมูลนอกประเทศไทย
+Janishammer (I-Flex Pilates) คำตอบจากฟอร์มเก็บไว้ใน Airtable ซึ่งอาจเก็บข้อมูลนอกประเทศไทย คำขอแคตตาล็อกจากเว็บไซต์เก็บใน Airtable เช่นกัน ฟอร์มบนเว็บไซต์ใช้ Cloudflare Turnstile เพื่อป้องกันสแปมอัตโนมัติ
 
 ### เก็บนานเท่าใด
-[ระยะเวลาเก็บ — เจ้าของกำหนด] ระหว่างนี้: ตลอดเวลาที่คุณเช่ากับเรา และหลังจากนั้นเพื่อเป็นบันทึกด้านความปลอดภัยและข้อพิพาท คุณขอให้ลบข้อมูลได้ทุกเมื่อ เราจะลบ เว้นแต่กฎหมายกำหนดให้เก็บ
+[ระยะเวลาเก็บ — เจ้าของกำหนด] ระหว่างนี้: ตลอดเวลาที่คุณเช่ากับเรา และหลังจากนั้นเพื่อเป็นบันทึกด้านความปลอดภัยและข้อพิพาท คุณขอให้ลบข้อมูลได้ทุกเมื่อ เราจะลบ เว้นแต่กฎหมายกำหนดให้เก็บ คำขอแคตตาล็อกจากเว็บไซต์ (ชื่อ อีเมล ช่องทางติดต่อ) เก็บไว้ 1 ปีนับจากวันที่ขอ แล้วลบ
 
 ### สิทธิของคุณ
 ขอดู แก้ไข หรือลบข้อมูล หรือถอนความยินยอม โดยเขียนถึง info@i-flexthailand.com
 
 ### ความยินยอม
-เมื่อติ๊กช่อง PDPA ในฟอร์ม คุณยินยอมให้ Janishammer (I-Flex Pilates) เก็บและใช้ข้อมูลนี้ตามวัตถุประสงค์ข้างต้น สำหรับเด็กต่ำกว่า 13 ปี ผู้ปกครองเป็นผู้ให้ความยินยอม
+เมื่อติ๊กช่อง PDPA ในฟอร์ม คุณยินยอมให้ Janishammer (I-Flex Pilates) เก็บและใช้ข้อมูลนี้ตามวัตถุประสงค์ข้างต้น สำหรับเด็กต่ำกว่า 13 ปี ผู้ปกครองเป็นผู้ให้ความยินยอม สำหรับคำขอแคตตาล็อกจากเว็บไซต์ คุณยินยอมโดยติ๊กช่องยินยอมในฟอร์มแคตตาล็อก

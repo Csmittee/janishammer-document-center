@@ -1,8 +1,15 @@
 # CC_CHAT_LOG.md — janishammer-document-center
-> Version 1.5 — 2026-11-10
-> Changes: per-business view entry added
-> Previous: Version 1.4 — 2026-11-10 (CC_SESSION_docs_themes_v1 entry added). Earlier: Version 1.3 — 2026-11-10 (addendum Task 1b recorded in the cookie-notice entry (issuer override)). Earlier: Version 1.2 — 2026-11-10 (cookie-notice entry added (Document Center part)). Earlier: Version 1.1 — 2026-11-03 (deploy-fix entry added). Earlier: Version 1.0 — 2026-11-03 (first entry)
+> Version 1.6 — 2026-11-24
+> Changes: CC_PROMPT_docs_privacy_leads_v1.0 entry added
+> Previous: Version 1.5 — 2026-11-10 (per-business view entry added). Older chain: Versions 1.0–1.4, 2026-11-03 to 2026-11-10 (entries below)
 
+---
+## 2026-11-24 — CC_PROMPT_docs_privacy_leads_v1.0 (order 1 of 2; order 2 = I-Flex catalog download)
+**Did:** privacy notice v1.1-draft (updated 2026-11-25): src/privacy-notice.md = Appendix A byte for byte (version lines, 2 bullets, 3 sentences EN; same in TH), documents.json (`privacy-notice` version and updated only), privacy-notice.html and pdf/privacy-notice.pdf rebuilt with `build_docs.py --only privacy-notice`. v1.0-draft archived first in archive/privacy-notice/v1.0-draft-2026-11-03/ (cmp-identical to the old files). Rental retention placeholder untouched.
+**Updated:** NONE (no rule). **New files:** the 2 archive files.
+**Pending Chat verify:** H1 diff of src/privacy-notice.md and documents.json against Appendix A after the merge. Owner QA steps 1–4.
+**Flags:** 10 paths (2 new). Other five pages + index.html sha256 identical; other five PDFs identical (raw and extracted text). Raw-source scan 0 matches. The order is dated 2026-11-25 (document text uses that date as ordered); file versions here use the session date 2026-11-24. NOT VERIFIED LIVE.
+**Previous PR QA:** janishammer-document-center#4 PASS and #5 PASS (closed by CC from ticks; no QA-FAIL comments). **Owner QA:** this PR PENDING (steps 1–4)
 ---
 ## 2026-11-10 — Per-business view (owner request in session chat, follow-up to CC_SESSION_docs_themes_v1)
 **Did:** assets/list.js (`/?b=<business id>` shows only that business, with its own banner and issuer; unknown id shows a short message; `/` unchanged), tools/build_docs.py (the two "← All documents" links go to the document's own business view), the six read pages rebuilt with `--no-pdf` (diff = exactly 12 link lines, 2 per page; no PDF, src or document text changed), CLAUDE.md (new constraint), PROJECT_STATE, this log. 7 changed files in addition to the state files.
